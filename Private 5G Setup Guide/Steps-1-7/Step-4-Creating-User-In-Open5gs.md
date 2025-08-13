@@ -1,8 +1,5 @@
-
-# In the Browser Where Open5GS Is Installed
-
-## Open the Browser and Go to  
-[http://localhost:9999](http://localhost:9999)
+## Open the Browser and Go to  (In the Browser Where Open5GS Is Installed).
+> http://localhost:9999
 
 ## Credentials
 ```bash
