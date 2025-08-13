@@ -22,7 +22,6 @@ Create new APN
 
 ## 5. Put the mobile once in Aeroplane ✈️ Mode and check connectivity.
 - If connected exit from here.
-====================================================================================================================================================================
 
 ## 6. If still no connectivity use third party applications to put phone in NR Mode.
 
@@ -45,7 +44,7 @@ In the Phone Info:
 
 ![WhatsApp Image 2025-04-12 at 23 25 17_faed914a](https://github.com/user-attachments/assets/3cf76336-2d43-4a20-864b-6641dc26ac9d)
 
-# Now we are getting 5g Internet
+## Now we are getting 5g Internet
 
 ![image](https://github.com/user-attachments/assets/a3a51ac7-a796-41d6-a865-8e8e1cf17c74)
 
