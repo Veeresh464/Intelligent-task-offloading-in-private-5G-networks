@@ -34,5 +34,3 @@ uhd_usrp_probe
 ```
 
 It will print the device if B210 is detected.
-
-![Uploading image.png…]()
