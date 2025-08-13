@@ -117,3 +117,14 @@ sudo gedit /etc/open5gs/nrf.yaml
 - **Change the highlighted IP with the IP address of system in case of multinode setup**
 ![image](https://github.com/user-attachments/assets/f47a4189-0913-4395-b556-40ef4e1b5fbf)
 
+
+### 4.   /etc/open5gs/upf.yaml configuration
+```bash
+ sudo gedit /etc/open5gs/upf.yaml
+```
+- change the MNC and MCC code accordingly as mentioned above, we have used 001 and 01 for MNC and MCC codes respectively.
+- We have used the TAC as 7.
+- **Change the highlighted IP with the IP address of system in case of multinode setup**
+![image](https://github.com/user-attachments/assets/89259622-bea6-48ef-abe3-b20f096d9602)
+
+
