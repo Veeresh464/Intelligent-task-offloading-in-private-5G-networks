@@ -29,7 +29,7 @@ sudo apt install open5gs
 
 
 ## 3️⃣ Installing Node.js (for WebUI)
-```
+```bash
 sudo apt update
 sudo apt install -y ca-certificates curl gnupg
 sudo mkdir -p /etc/apt/keyrings
@@ -43,3 +43,20 @@ echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.co
 sudo apt update
 sudo apt install nodejs -y
 ```
+
+
+## 4️⃣ Installing Open5GS WebUI
+```bash
+curl -fsSL https://open5gs.org/open5gs/assets/webui/install | sudo -E bash -
+```
+
+
+
+## ⚙️ Configuration for srsRAN Compatibility
+**
+TIP:
+In case of single node setup (srsGNB and Open5gs in same PC). `No change in IP address required just change MCC and MNC code`. 
+In case of Multinode setup (srsGNB and Open5gs in different PCs). ` change the IP address where highlighted in image to IP address of Machine and MCC and MNC code`. 
+**
+
+
