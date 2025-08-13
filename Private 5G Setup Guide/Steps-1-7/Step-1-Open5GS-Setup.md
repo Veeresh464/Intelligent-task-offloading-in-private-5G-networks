@@ -51,7 +51,6 @@ curl -fsSL https://open5gs.org/open5gs/assets/webui/install | sudo -E bash -
 ```
 
 ## Installation and setup is completed Now we have to configure it to be compatible with srsRAN
-============================================================================================
 
 ## ⚙️ Configuration for srsRAN Compatibility
 ### 💡 TIP
