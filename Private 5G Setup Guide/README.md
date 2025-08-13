@@ -36,6 +36,7 @@ Follow the steps in the [`Steps-1-7`](./Steps-1-7) folder for a detailed walk-th
 6. **COTS UE Configuration** – Configure mobile phones for private 5G connection.
 7. **Connectivity Test** – Verify registration, attach procedure, and data transfer.
 
+---
 
 ## 🧠 Open5GS – The Core Network
 
