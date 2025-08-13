@@ -1,6 +1,23 @@
 # Private-5g
 Setting up a real time 5g network using **Open5gs** as core and **srsRAN** as RAN which is connected to real 5G COTS Devices (**5G Mobiles**) using **USRP B210** as BASE Satation
 
+
+📡 Private 5G Network Setup
+This repository documents the end-to-end setup of a real-time 5G network using:
+
+Open5GS as the 5G Core
+
+srsRAN as the Radio Access Network (RAN)
+
+USRP B210 as the base station hardware
+
+Connected to Commercial Off-The-Shelf (COTS) 5G devices (smartphones)
+
+✅ Fully tested with Samsung S23 and OPPO Reno 5G using OpenCell SIM cards.
+
+
+
+
 ## Reqiurements
 ```
 - ubuntu 22.04 LTS 
