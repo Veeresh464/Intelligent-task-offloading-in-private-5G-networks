@@ -63,6 +63,7 @@ curl -fsSL https://open5gs.org/open5gs/assets/webui/install | sudo -E bash -
 
 ## In case of Multi-Node setup, we need to replace every IP shown in the image with the IP address of the machine (can get using `ip a` command)
 
+
 ### 1.   /etc/open5gs/mme.yaml configuration
 ```
  gedit /etc/open5gs/mme.yaml
@@ -94,4 +95,13 @@ We have used the TAC as 7.
 
 No change in IP address is required for our setup.
 (Do not change any IP addresses)
+
+
+
+### 2.   /etc/open5gs/nrf.yaml configuration
+```bash
+sudo gedit /etc/open5gs/nrf.yaml
+```
+- change the MNC and MCC code accordingly as mentioned above, we have used 001 and 01 for MNC and MCC codes respectively.
+- We have used the TAC as 7.
 
