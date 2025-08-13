@@ -134,7 +134,7 @@ sudo gedit /etc/open5gs/nrf.yaml
 - Sets up NAT masquerading on interface eth0, so outgoing packets appear as if they come from your machine’s IP (needed for internet sharing).
 - Stops UFW (Uncomplicated Firewall) service to avoid firewall rules blocking your forwarding/NAT.
 - Adds a rule to allow all forwarded packets through the system.
-- 📌 In short: These commands turn your PC into a simple router by enabling packet forwarding, setting up NAT, and opening firewall rules.
+> - 📌 In short: These commands turn your PC into a simple router by enabling packet forwarding, setting up NAT, and opening firewall rules.
 
 ```bash
 sudo sysctl -w net.ipv4.ip_forward=1
