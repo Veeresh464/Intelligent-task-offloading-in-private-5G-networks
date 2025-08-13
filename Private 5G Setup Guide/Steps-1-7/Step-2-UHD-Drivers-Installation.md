@@ -1,7 +1,6 @@
 # 📡 Step 2 – UHD Drivers Installation for USRP B210
 
 In this step, we install and configure the **UHD (USRP Hardware Driver)** to enable communication between the **USRP B210** and **srsRAN** (👉 B210 act as a tower or Base stations in our 5g setup).
----
 
 
 ## Install dependencies
