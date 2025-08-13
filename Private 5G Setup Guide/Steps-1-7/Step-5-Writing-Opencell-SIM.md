@@ -1,8 +1,8 @@
 ## Visit this website for details
-https://open-cells.com/index.php/uiccsim-programing/
+>> https://open-cells.com/index.php/uiccsim-programing/
 
 ### 1. Download source-code
-https://open-cells.com/d5138782a8739209ec5760865b1e53b0/uicc-v3.3.tgz
+>> https://open-cells.com/d5138782a8739209ec5760865b1e53b0/uicc-v3.3.tgz
 
 
 Now Extract the downloaded file.
