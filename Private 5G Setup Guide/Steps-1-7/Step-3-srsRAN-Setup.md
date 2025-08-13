@@ -1,4 +1,4 @@
-# 📡 Step 3 – srsRAN Setup (srsGNB for 5G NR)
+# 📡 Step 3 – srsRAN Setup (srsGNB)
 
 This step explains how to clone, build, and run the **srsRAN Project** to act as a 5G gNodeB (gNB) with the **USRP B210**.
 
