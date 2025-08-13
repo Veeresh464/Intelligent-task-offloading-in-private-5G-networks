@@ -10,27 +10,29 @@ This repository documents the **end-to-end setup** of a real-time 5G network usi
 ✅ Fully tested with **Samsung S23** and **OPPO Reno 5G** using **OpenCell SIM cards**.
 
 
+## 🛠 Requirements
+
+| Component       | Purpose |
+|-----------------|---------|
+| **Ubuntu 22.04 LTS** | Operating system for running Open5GS & srsRAN |
+| **USRP B210**   | Software-defined radio hardware acting as the 5G base station |
+| **OpenCell SIM** | SIM cards for registering UEs with the 5G core |
+| **COTS UE**     | 5G smartphones for testing connectivity |
+
+💡 **Tip:** Install Ubuntu on bare metal (dual boot recommended) instead of using a virtual machine for better hardware performance and less probability of the errors.
 
 
+## 🚀 Setup Guide
 
-## Reqiurements
-```
-- ubuntu 22.04 LTS 
-- USRP B210
-- Opencell SIM
-- COTS UE (Samsung s23, OPPO Reno 5G used in our setup)
-```
+Follow the steps in the [`Steps-1-7`](./Steps-1-7) folder for a detailed walk-through.
 
-#### Tip: USE UBUNTU IN HOST WITHOUT CREATING VM. (Ex: USE DUAL BOOT) 
+### High-Level Process
 
-## The steps are mentioned in above [/Steps-1-7 ](https://github.com/ManojPandekamat/Private-5g-setup-with-Open5gs-and-srsRAN-and-B210/tree/main/Steps-1-7) folder
-## Go through the following steps for complete set-up
-```
-  1. Open5gs setup.
-  2. uhd drivers installation for connecting B210 with the srsRAN.
-  3. srsRAN setup.
-  4. Creating User in Open5gs from Open5gs webUI
-  5. Writing the sim (Opencells SIM card).
-  6. Configuring COTS UE (5G Mobile Phone).
-  7. Checking connectivity. 
-```
+1. **Open5GS Setup** – Install and configure the 5G Core network.
+2. **UHD Drivers Installation** – Set up USRP B210 drivers for hardware communication.
+3. **srsRAN Setup** – Configure the Radio Access Network.
+4. **Open5GS WebUI User Creation** – Register UE subscribers in the 5G Core.
+5. **SIM Writing** – Program OpenCell SIM cards with matching IMSI & keys.
+6. **COTS UE Configuration** – Configure mobile phones for private 5G connection.
+7. **Connectivity Test** – Verify registration, attach procedure, and data transfer.
+
