@@ -95,8 +95,8 @@ In my setup, srsRAN acted as the 5G **gNB** (base station), which is split into:
 ---
 
 ## 🖼 Conceptual Diagram
-
-> [UE] ⇄ [RU + DU + CU (srsRAN/USRP B210)] ⇄ [AMF | SMF | UPF | PCF | NRF (Open5GS)] ⇄ Internet
+> COTS -> Base station(Tower) -> Network CORE -> Internet
+> [UE] ⇄ [USRP B210 -> srsRAN] ⇄ [Open5GS] ⇄ Internet
 
 
 
