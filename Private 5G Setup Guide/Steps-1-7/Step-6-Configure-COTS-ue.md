@@ -1,10 +1,10 @@
 # We have used Oppo Reno 5g mobile phone for connections
 
-### 1. Insert the sim in the mobile phone
+## 1. Insert the SIM in the mobile
 
-### 2. Check if phone detect the sim
+## 2. Check if phone detect the sim
 
-### 3. Manually add APN
+## 3. Manually add APN
 ```
 Go to settings
 Go to network settings.
@@ -18,16 +18,15 @@ Create new APN
   Create APN.
 ```
 
-## Check if srsGNB and Open5gs are running correctly.
+## 4. Check if srsGNB and Open5gs are running correctly.
 
-## Put the Phone once in Aeroplane ✈️ Mode and check connectivity.
-
+## 5. Put the mobile once in Aeroplane ✈️ Mode and check connectivity.
+- If connected exit from here.
 ====================================================================================================================================================================
 
-## If still no connectivity use third party applications to put phone in NR Mode.
+## 6. If still no connectivity use third party applications to put phone in NR Mode.
 
 We used `Netmonster` can be downloaded from Playstore.
-
 
 
 ![image](https://github.com/user-attachments/assets/c330090c-b70e-4921-b32a-2045a6bd5297)
