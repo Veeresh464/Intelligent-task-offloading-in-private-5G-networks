@@ -23,7 +23,7 @@ sudo apt-get install libuhd-dev uhd-host
 sudo uhd_images_downloader
 ```
 
-# Now Connect the B210 device to PC in which you want to install srsRAN and check if your device detects B210
+## Now Connect the B210 device to PC in which you want to install srsRAN and check if your device detects B210
 
 ```bash
 uhd_find_devices
