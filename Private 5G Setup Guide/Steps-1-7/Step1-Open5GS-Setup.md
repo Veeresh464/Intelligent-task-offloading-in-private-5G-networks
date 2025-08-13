@@ -128,3 +128,27 @@ sudo gedit /etc/open5gs/nrf.yaml
 ![image](https://github.com/user-attachments/assets/89259622-bea6-48ef-abe3-b20f096d9602)
 
 
+
+## Enabling NAT configuration in the machine to access Internet
+
+- Enables IP forwarding in the Linux kernel (lets your machine forward packets between network interfaces, acting like a router).
+- Sets up NAT masquerading on interface eth0, so outgoing packets appear as if they come from your machine’s IP (needed for internet sharing).
+- Stops UFW (Uncomplicated Firewall) service to avoid firewall rules blocking your forwarding/NAT.
+- Adds a rule to allow all forwarded packets through the system.
+- 📌 In short: These commands turn your PC into a simple router by enabling packet forwarding, setting up NAT, and opening firewall rules.
+
+```bash
+sudo sysctl -w net.ipv4.ip_forward=1
+sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+sudo systemctl stop ufw
+sudo iptables -I FORWARD 1 -j ACCEPT
+```
+
+
+## Restart all 5g services
+```bash
+sudo systemctl restart open5gs-*
+```
+
+# Now we have completed the core side of the 5g setup 👍 🎉🎉.
+
