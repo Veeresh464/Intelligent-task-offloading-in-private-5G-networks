@@ -104,4 +104,5 @@ sudo gedit /etc/open5gs/nrf.yaml
 ```
 - change the MNC and MCC code accordingly as mentioned above, we have used 001 and 01 for MNC and MCC codes respectively.
 - We have used the TAC as 7.
+![image](https://github.com/user-attachments/assets/5f3f02d0-e10e-4a57-bdb9-5e1dbb0233e8)
 
