@@ -51,8 +51,7 @@ curl -fsSL https://open5gs.org/open5gs/assets/webui/install | sudo -E bash -
 ```
 
 ## Installation and setup is completed Now we have to configure it to be compatible with srsRAN
-==================================================================================================================================================================
-
+============================================================================================
 
 ## ⚙️ Configuration for srsRAN Compatibility
 ### 💡 TIP
@@ -62,4 +61,37 @@ curl -fsSL https://open5gs.org/open5gs/assets/webui/install | sudo -E bash -
   Change the IP address where highlighted in image to IP address of Machine (where you have installed the open5Gs) and **MCC** and **MNC** code.
 
 
+## In case of Multi-Node setup, we need to replace every IP shown in the image with the IP address of the machine (can get using `ip a` command)
+
+### 1.   /etc/open5gs/mme.yaml configuration
+```
+ gedit /etc/open5gs/mme.yaml
+```
+Change the MNC and MCC codes accordingly.
+(We have used 001 for MNC and 01 for MCC codes respectively)
+
+The values `001` (MNC) and `01` (MCC) are **Mobile Network Codes** and **Mobile Country Codes** — they identify a mobile network operator and country in mobile communication systems (like LTE, 5G).
+**MCC (Mobile Country Code)** → `01`  
+- Identifies the country of the mobile network.  
+- `01` is a **test MCC** defined by the ITU (not tied to any real-world country).  
+- Used in lab setups, simulations, or private 5G networks so they don’t conflict with real operator networks.
+**MNC (Mobile Network Code)** → `001`  
+- Identifies the specific mobile network operator within the country defined by the MCC.  
+- `001` is also a **test MNC** used for experimental setups.
+📌 **In short:**  
+`MCC = 01` + `MNC = 001` → **Test network identifiers**, safe for private LTE/5G setups without interfering with real carriers.
+
+
+
+We have used the TAC as 7.
+(It should be the same in the srsRAN configuration)
+
+**TAC = 7 in our setup**  
+- Here, we’ve chosen `7` arbitrarily for testing purposes.  
+- The same TAC value **must match** between the RAN side (srsRAN) and the core network (Open5GS) configuration — otherwise the UE will reject the attach request.  
+- In private or test networks, any unused TAC value can be chosen, but in public networks TACs are allocated by the operator.
+
+
+No change in IP address is required for our setup.
+(Do not change any IP addresses)
 
