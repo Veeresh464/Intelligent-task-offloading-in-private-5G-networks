@@ -159,7 +159,9 @@ Edge devices often face resource constraints and high latency due to inefficient
 
 > 🤠Throughput Comparisons👀
 
-
+<p align="center">
+  <img src="./images/load_on_both_endDevice_edgeNode.png" alt="Throughput on Edge Node">
+</p>
 
 
 
