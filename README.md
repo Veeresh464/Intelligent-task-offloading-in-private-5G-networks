@@ -38,7 +38,7 @@ Edge devices often face resource constraints and high latency due to inefficient
 - The throughput achieved during task execution at the edge should be increased by more than 50% compared to execution in the cloud.
 - The latency measured when processing at the edge should be reduced by at least 30% compared to task execution in the cloud.
 
-### 3.3 Hardware Minimum Requirements
+### 3.3 Minimum Hardware Requirements
 - RAM: 32 GB
 - Storage: 100 GB SSD or higher
 - Processor: Multi-core CPU (Intel i7 or equivalent recommended)
