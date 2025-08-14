@@ -2,7 +2,7 @@
 Private 5G network using Open5GS and srsRAN with COTS devices (5G smartphones, laptops). Implements an Intelligent Task Offloading framework to dynamically route computation between UE, MEC, and Cloud for low-latency, high-throughput applications.
 
 ---
-## Steps for Running this Project
+## ⚡⚡ Running this Project
 
 > You can build all the Docker images mentioned in this project from scrach using **Build**. Use pre built images setup in the configuration files.
 
