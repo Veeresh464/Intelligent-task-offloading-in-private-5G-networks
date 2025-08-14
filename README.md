@@ -54,6 +54,7 @@ Edge devices often face resource constraints and high latency due to inefficient
 - Machine Learning Framework: TensorFlow
 
 > 📒 More Detail refer our report (link of report).
+
 ---
 
 ## 3. System Design
@@ -62,15 +63,17 @@ Edge devices often face resource constraints and high latency due to inefficient
   <img src="./images/systemDesign.png" alt="image">
 </p>
 
-- User Equipment (UE) Layer: This layer consists of mobile devices (UEs) connected wirelessly via a 5G network. Communication is facilitated by a USRP B210 software-defined radio acting as the base station, which forms the Radio Access Network (RAN). These devices offload computation-intensive tasks to the network for processing.
+- **User Equipment (UE) Layer:** This layer consists of mobile devices (UEs) connected wirelessly via a 5G network. Communication is facilitated by a USRP B210 software-defined radio acting as the base station, which forms the Radio Access Network (RAN). These devices offload computation-intensive tasks to the network for processing.
 
-- **Core Layer:** The core layer is implemented using **Open5GS** as the 5G core network.  
-Within Open5GS, key network functions such as the **Session Management Function (SMF)** and **User Plane Function (UPF)** manage routing, session handling, and packet forwarding.  
-This layer establishes and maintains connectivity between **User Equipment (UEs)** and the data processing layers, enabling seamless network registration and data flow.
+- **Core Layer:** The core layer is implemented using Open5GS as the 5G core network. Within Open5GS, key network functions such as the Session Management Function (SMF) and User Plane Function (UPF) manage routing, session handling, and packet forwarding. This layer establishes and maintains connectivity between User Equipment (UEs) and the data processing layers, enabling seamless network registration and data flow.
 
+- **Edge Layer (Kubernetes):** Serving as an intermediate layer between the core and cloud, the edge layer comprises multiple edge nodes running containerized applications orchestrated by Kubernetes. These nodes provide computation near the user, significantly reducing latency. A real-time LSTM-based intelligent scheduler operates within this layer, continuously analyzing resource utilization metrics such as CPU and memory usage to determine optimal task placement. If the edge nodes have sufficient resources, tasks are executed locally to ensure low latency and faster response times. This dynamic, predictive offloading decision is a core feature of the system.
 
+- **Cloud Layer (OpenStack):** When the resource utilization of edge nodes exceeds a predefined threshold (30% CPU utilization), tasks are offloaded to cloud nodes. Data processed by both edge and cloud nodes are stored on virtual machines hosted on OpenStack. The cloud environment provides scalable computing power and storage for tasks requiring extensive processing or long-term archiving. Additionally, it acts as a backup in case of edge node failure.
 
-## Total Work Flow
+---
+
+## 4. Work Flow
 1. User connects Private 5G network
 2. User request to schedular `10.45.0.1:5001/predict` endpoint at the edge core (Kubernetes).
 3. Schedular forword request to one of the selected node
@@ -82,3 +85,9 @@ This layer establishes and maintains connectivity between **User Equipment (UEs)
 <p align="center">
   <img src="./images/workFlow.png" alt="image">
 </p>
+
+## 5. Implimentation
+> ⚡You can build all the Docker images mentioned in this project from scrach using **Build** or we have already mentioned the images built during setup in the configuration files.
+
+- 📒 More Detailed Implimentation refer our report (link of report).
+
