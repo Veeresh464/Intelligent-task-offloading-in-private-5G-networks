@@ -11,4 +11,4 @@ Private 5G network using Open5GS and srsRAN with COTS devices (5G smartphones, l
     - If no edge node is availble below threshold value it forwards the request to cloud core (Openstack) deployed in remote server.
 4. The Edge core or cloud core process the image and return the results to the user and send the processed data to the storage node in cloud core for future use.
 
-
+![image](./images/workFlow.png)
