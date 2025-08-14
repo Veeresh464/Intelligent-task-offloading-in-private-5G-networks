@@ -1,0 +1,1 @@
+Hello, this has the contents if you want to build the images from the scratch.
