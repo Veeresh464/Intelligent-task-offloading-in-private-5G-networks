@@ -86,8 +86,18 @@ Edge devices often face resource constraints and high latency due to inefficient
   <img src="./images/workFlow.png" alt="image">
 </p>
 
-## 5. Implimentation
+## 5. Implementation
 > ⚡You can build all the Docker images mentioned in this project from scrach using **Build** or we have already mentioned the images built during setup in the configuration files.
 
-- 📒 More Detailed Implimentation refer our report [click me](./Project Report/report.pdf).
+- 📒 More Detailed Implementation: Refer to our report [click me](./Project%20Report/report.pdf).
+
+---
+
+## 6. Results and Analysis
+
+### 6.1 Performance Evaluation With and Without MEC
+
+> 🤠Latency Comparison Across Tasks With and Without MEC Deployment👀
+
+
 
