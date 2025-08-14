@@ -115,9 +115,31 @@ Edge devices often face resource constraints and high latency due to inefficient
   <img src="./images/with_without_mec_throughput.png" alt="Throughput Comparison">
 </p>
 
-### 6.2 Performance Evaluation by Varying Load on Edge Devices
+### 6.2 Performance Evaluation in Network by Varying Load on Edge Devices
 
 > 🤠Latency Comparison Across Tasks👀
+
+<p align="center">
+  <img src="./images/load_on_end_device_latency.png" alt="Latency on End Device">
+</p>
+
+> 🤠Average Latency Comparisons👀
+
+<p align="center">
+  <img src="./images/load_on_end_device_avglatency.png" alt="Average Latency on End Device">
+</p>
+
+> 🤠Throughput Comparisons👀
+
+<p align="center">
+  <img src="./images/load_on_end_device_throughput.png" alt="Throughput on End Device">
+</p>
+
+### 6.3 Performance Evaluation by Varying Load on Edge Nodes
+
+> 🤠Throughput Comparisons👀
+
+
 
 
 > 🤠Average Latency Comparisons👀
