@@ -24,13 +24,34 @@ Edge devices often face resource constraints and high latency due to inefficient
 - Design an intelligent task offloading algorithm that dynamically allocates tasks between edge and cloud nodes based on real-time results and predicted resource utilization.
 - Evaluate the model.
 
-## 2.2 2.3 Hardware Minimum Requirements
+---
+
+## 3.  Requirement Analysis
+
+### 3.1 Functional Requirements
+-  The edge devices must be able to send data to the edge node servers.
+-  The scheduler should be able to decide whether the task should be executed locally or in the cloud environment.
+-  Edge and cloud nodes must be able to process the user’s task and send the result back to the requesting user.
+-  The edge nodes must be able to upload data to the cloud storage in OpenStack.
+
+### 3.2 Non Functional Requirements
+- The throughput achieved during task execution at the edge should be increased by more than 50% compared to execution in the cloud.
+- The latency measured when processing at the edge should be reduced by at least 30% compared to task execution in the cloud.
+
+### 3.3 Hardware Minimum Requirements
 - RAM: 32 GB
 - Storage: 100 GB SSD or higher
 - Processor: Multi-core CPU (Intel i7 or equivalent recommended)
 - Base Station Hardware: USRP B210 Software Defined Radio
 
-🫣 If you want you own private the cloud core then another device of same requirements is needed. We had used the servers for this purpose you can also opt to go with public cloud system but costs are applicable if not in free tier.
+> 🫣 If you want you own private the cloud core then another device of same requirements is needed. We had used the servers for this purpose you can also opt to go with public cloud system but costs are applicable if not in free tier.
+
+### 3.4 Software Requirements
+- Operating System: Ubuntu 22.04 LTS   
+- Development Tools: Visual Studio Code, Docker  
+- Virtualization Platform: OpenStack (DevStack) 2025.1
+- Container Orchestration: Kubernetes (MicroK8s)  
+- Machine Learning Framework: TensorFlow
 
 > 📒 More Detail refer our report (link of report).
 ---
