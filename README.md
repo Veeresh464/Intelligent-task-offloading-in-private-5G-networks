@@ -117,4 +117,10 @@ Edge devices often face resource constraints and high latency due to inefficient
 
 ### 6.2 Performance Evaluation by Varying Load on Edge Devices
 
+> 🤠Latency Comparison Across Tasks👀
 
+
+> 🤠Average Latency Comparisons👀
+
+
+> 🤠Throughput Comparisons👀
