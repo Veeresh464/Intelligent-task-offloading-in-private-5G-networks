@@ -97,22 +97,24 @@ Edge devices often face resource constraints and high latency due to inefficient
 
 ### 6.1 Performance Evaluation With and Without MEC
 
-> 🤠Latency Comparison Across Tasks With and Without MEC Deployment👀
-
-<p align="center">
-  <img src="./images/with_without_mec_avglatency.png" alt="Average Latency Comparison">
-</p>
-
-> 🤠Average Latency Comparison Across Tasks With and Without MEC Deployment👀
+> 🤠Latency Comparison Across Tasks👀
 
 <p align="center">
   <img src="./images/with_without_mec_latency.png" alt="Latency Comparison">
 </p>
 
-> 🤠Throughput Comparison Across Tasks With and Without MEC Deployment👀
+> 🤠Average Latency Comparisons👀
+
+<p align="center">
+  <img src="./images/with_without_mec_avglatency.png" alt="Average Latency Comparison">
+</p>
+
+> 🤠Throughput Comparisons👀
 
 <p align="center">
   <img src="./images/with_without_mec_throughput.png" alt="Throughput Comparison">
 </p>
+
+### 6.2 Performance Evaluation by Varying Load on Edge Devices
 
 
