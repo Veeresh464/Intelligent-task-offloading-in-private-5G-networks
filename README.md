@@ -139,10 +139,27 @@ Edge devices often face resource constraints and high latency due to inefficient
 
 > 🤠Throughput Comparisons👀
 
-
-
+<p align="center">
+  <img src="./images/load_on_edgeNode_latency.png" alt="Latency on Edge Node">
+</p>
 
 > 🤠Average Latency Comparisons👀
 
+<p align="center">
+  <img src="./images/load_on_edgeNode_avglatency.png" alt="Average Latency on Edge Node">
+</p>
 
 > 🤠Throughput Comparisons👀
+
+<p align="center">
+  <img src="./images/load_on_edgeNode_throughput.png" alt="Throughput on Edge Node">
+</p>
+
+## 6.4 Performance Evaluation by Varying Load on Edge node and Edge Device
+
+> 🤠Throughput Comparisons👀
+
+
+
+
+
