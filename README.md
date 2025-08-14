@@ -9,6 +9,8 @@ Private 5G network using Open5GS and srsRAN with COTS devices (5G smartphones, l
 1. Go to [*Private 5G setup guide*](https://github.com/Veeresh464/Intelligent-task-offloading-in-private-5G-networks/tree/main/Private%205G%20Setup%20Guide) and follow the instruction.
 2. For Quick Deploy follow [*Direct Run*](https://github.com/Veeresh464/Intelligent-task-offloading-in-private-5G-networks/tree/main/Direct%20Run) .
 3. For Scratch Deployment follow both [*Build*](https://github.com/Veeresh464/Intelligent-task-offloading-in-private-5G-networks/tree/main/Build) and [*Direct Run*](https://github.com/Veeresh464/Intelligent-task-offloading-in-private-5G-networks/tree/main/Direct%20Run) .
+4. Project Report for [*reference*](https://github.com/Veeresh464/Intelligent-task-offloading-in-private-5G-networks/tree/main/Project%20Report) .
+5. [Images](https://github.com/Veeresh464/Intelligent-task-offloading-in-private-5G-networks/tree/main/images) used in this repo
 
 
 ---
