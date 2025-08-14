@@ -4,8 +4,11 @@ Private 5G network using Open5GS and srsRAN with COTS devices (5G smartphones, l
 ---
 ## Steps for Running this Project
 
-- You can build all the Docker images mentioned in this project from scrach using **Build**.
-- Use pre built images setup in the configuration files.
+> You can build all the Docker images mentioned in this project from scrach using **Build**. Use pre built images setup in the configuration files.
+
+1. Go to [*Private 5G setup guide*](https://github.com/Veeresh464/Intelligent-task-offloading-in-private-5G-networks/tree/main/Private%205G%20Setup%20Guide) and follow the instruction.
+2. For Quick Deploy follow [*Direct Run*](https://github.com/Veeresh464/Intelligent-task-offloading-in-private-5G-networks/tree/main/Direct%20Run) .
+3. For Scratch Deployment follow both [*Build*](https://github.com/Veeresh464/Intelligent-task-offloading-in-private-5G-networks/tree/main/Build) and [*Direct Run*](https://github.com/Veeresh464/Intelligent-task-offloading-in-private-5G-networks/tree/main/Direct%20Run) .
 
 
 ---
