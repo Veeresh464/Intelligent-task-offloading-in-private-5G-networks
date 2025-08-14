@@ -1,0 +1,1 @@
+Hello everyone, this contains the direct running of the project for quick start and deployment
