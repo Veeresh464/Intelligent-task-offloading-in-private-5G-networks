@@ -95,21 +95,35 @@ Edge devices often face resource constraints and high latency due to inefficient
 
 ## 6. Results and Analysis
 
+The results are analyzed under different scenarios, each designed to evaluate the performance of intelligent task offloading under varying load conditions. We measured delay with MEC and without MEC, and specifically considered three scenarios: 
+- 1. Performance with and without MEC
+- 2. Load Applied on the Network through Edge Devices (User Equipment)
+- 3. Load Applied Solely on the Edge Nodes (Kubernetes Pods)
+- 4. Load Applied on Both the User Devices and Edge Nodes Simultaneously
+These scenarios allow us to assess how effectively the system adapts to dynamic workload distributions and to evaluate the behavior of the LSTM-based scheduler under real-time offloading conditions. The detailed analysis for each scenario is presented below.
+
+
 ### 6.1 Performance Evaluation With and Without MEC
 
-> 🤠Latency Comparison Across Tasks👀
+#### 🤠Latency Comparison Across Tasks👀
+
+> ⚡⚡Latency comparison across 10 task instances, with and without Mobile Edge Computing (MEC) deployment. For all 10 instances, the latency with MEC is significantly lower, indicating faster task processing due to edge-localized computation. Without MEC, higher latency values occur consistently, reflecting the overhead of offloading tasks to distant servers. These results clearly demonstrate the performance advantages of MEC in reducing task offloading delays across multiple instances.
 
 <p align="center">
   <img src="./images/with_without_mec_latency.png" alt="Latency Comparison" width="600">
 </p>
 
-> 🤠Average Latency Comparisons👀
+#### 🤠Average Latency Comparisons👀
+
+> ⚡⚡ The average latency between scenarios with and without MEC deployment is compared. The average latency with MEC is significantly lower at 579.09 ms, compared to 1117.13 ms without MEC. This highlights the effectiveness of MEC in reducing processing delays by bringing computation closer to the edge.
 
 <p align="center">
   <img src="./images/with_without_mec_avglatency.png" alt="Average Latency Comparison" width="600">
 </p>
 
-> 🤠Throughput Comparisons👀
+#### 🤠Throughput Comparisons👀
+
+> ⚡⚡ The average throughput comparison between deployments with and without MEC shows that throughput nearly doubles with MEC deployment, increasing from 1.71 Gbps to 3.31 Gbps. This demonstrates MEC’s capability to enhance data transmission efficiency by processing closer to the source.
 
 <p align="center">
   <img src="./images/with_without_mec_throughput.png" alt="Throughput Comparison" width="600">
@@ -117,19 +131,25 @@ Edge devices often face resource constraints and high latency due to inefficient
 
 ### 6.2 Performance Evaluation in Network by Varying Load on End Devices
 
-> 🤠Latency Comparison Across Tasks👀
+#### 🤠Latency Comparison Across Tasks👀
+
+> ⚡⚡ The task offloading latency across 10 instances with and without load on the edge device shows that latency significantly increases when the edge device is under load, with some tasks experiencing delays over 5000 ms. Without load, latency remains consistently lower, typically under 1000 ms. This highlights how device load adversely impacts offloading performance and response times.
 
 <p align="center">
   <img src="./images/load_on_end_device_latency.png" alt="Latency on End Device" width="600">
 </p>
 
-> 🤠Average Latency Comparisons👀
+#### 🤠Average Latency Comparisons👀
+
+> ⚡⚡ The average latency comparison with and without load on the edge device shows that latency is significantly higher when the edge device is under load, reaching nearly 1959 ms. Without load, the average latency reduces substantially to about 622 ms, demonstrating the impact of device load on performance.
 
 <p align="center">
   <img src="./images/load_on_end_device_avglatency.png" alt="Average Latency on End Device" width="600">
 </p>
 
-> 🤠Throughput Comparisons👀
+#### 🤠Throughput Comparisons👀
+
+> ⚡⚡ The average throughput comparison with and without load on the edge device shows that throughput decreases to 0.98 Mbps under load conditions. Without load, the throughput improves markedly to 3.08 Mbps, highlighting the effect of edge device load on data transmission performance.
 
 <p align="center">
   <img src="./images/load_on_end_device_throughput.png" alt="Throughput on End Device" width="600">
@@ -137,19 +157,25 @@ Edge devices often face resource constraints and high latency due to inefficient
 
 ### 6.3 Performance Evaluation by Varying Load on Edge Nodes
 
-> 🤠Latency Comparison Across Tasks👀
+#### 🤠Latency Comparison Across Tasks👀
+
+> ⚡⚡ The upload latency per request across 10 instances is consistently higher under load on the edge node, reaching up to 3104.47 ms. Without load, latency remains stable and low, around 700–800 ms, highlighting the significant impact of edge node load on upload latency performance.
 
 <p align="center">
   <img src="./images/load_on_edgeNode_latency.png" alt="Latency on Edge Node" width="600">
 </p>
 
-> 🤠Average Latency Comparisons👀
+#### 🤠Average Latency Comparisons👀
+
+> ⚡⚡ The average latency comparison with and without load on the edge node shows that latency nearly doubles under load, increasing from 720 ms to 1455.48 ms. This demonstrates the substantial impact of edge node load on system responsiveness.
 
 <p align="center">
   <img src="./images/load_on_edgeNode_avglatency.png" alt="Average Latency on Edge Node" width="600">
 </p>
 
-> 🤠Throughput Comparisons👀
+#### 🤠Throughput Comparisons👀
+
+> ⚡⚡ The average upload throughput comparison with and without load on the edge node shows a decrease from 1.85 Mbps without load to 1.32 Mbps under load. This highlights the negative impact of edge node load on data transmission efficiency.
 
 <p align="center">
   <img src="./images/load_on_edgeNode_throughput.png" alt="Throughput on Edge Node" width="600">
@@ -157,11 +183,21 @@ Edge devices often face resource constraints and high latency due to inefficient
 
 ### 6.4 Performance Evaluation by Varying Load on Edge Node and End Device
 
-> 🤠Throughput Comparisons👀
+#### 🤠Throughput Comparisons👀
+
+> ⚡⚡ The upload latency for 10 individual requests under load conditions varies significantly, ranging from a high of 5853.45 ms (Request 3) to a low of 449.55 ms (Request 10). This variability underscores the inconsistent performance of the system when the edge device is operating under load.
 
 <p align="center">
   <img src="./images/load_on_both_endDevice_edgeNode.png" alt="Throughput on Edge Node" width="600">
 </p>
+
+| Metric                     | Value    |
+|----------------------------|----------|
+| Average Latency (ms)       | 2590.33  |
+| Average Throughput (Mbps)  | 0.74     |
+
+
+> ⚡⚡ The average latency and throughput measured under varying load conditions on both edge nodes and edge devices show a latency of approximately 2590.33 ms, reflecting the total time taken for task offloading and execution under load. The throughput, observed at 0.74 Mbps, indicates the data transmission rate during this process. These values help in assessing the performance impact when system resources are stressed.
 
 
 
