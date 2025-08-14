@@ -100,68 +100,69 @@ Edge devices often face resource constraints and high latency due to inefficient
 > 🤠Latency Comparison Across Tasks👀
 
 <p align="center">
-  <img src="./images/with_without_mec_latency.png" alt="Latency Comparison">
+  <img src="./images/with_without_mec_latency.png" alt="Latency Comparison" width="600">
 </p>
 
 > 🤠Average Latency Comparisons👀
 
 <p align="center">
-  <img src="./images/with_without_mec_avglatency.png" alt="Average Latency Comparison">
+  <img src="./images/with_without_mec_avglatency.png" alt="Average Latency Comparison" width="600">
 </p>
 
 > 🤠Throughput Comparisons👀
 
 <p align="center">
-  <img src="./images/with_without_mec_throughput.png" alt="Throughput Comparison">
+  <img src="./images/with_without_mec_throughput.png" alt="Throughput Comparison" width="600">
 </p>
 
-### 6.2 Performance Evaluation in Network by Varying Load on Edge Devices
+### 6.2 Performance Evaluation in Network by Varying Load on End Devices
 
 > 🤠Latency Comparison Across Tasks👀
 
 <p align="center">
-  <img src="./images/load_on_end_device_latency.png" alt="Latency on End Device">
+  <img src="./images/load_on_end_device_latency.png" alt="Latency on End Device" width="600">
 </p>
 
 > 🤠Average Latency Comparisons👀
 
 <p align="center">
-  <img src="./images/load_on_end_device_avglatency.png" alt="Average Latency on End Device">
+  <img src="./images/load_on_end_device_avglatency.png" alt="Average Latency on End Device" width="600">
 </p>
 
 > 🤠Throughput Comparisons👀
 
 <p align="center">
-  <img src="./images/load_on_end_device_throughput.png" alt="Throughput on End Device">
+  <img src="./images/load_on_end_device_throughput.png" alt="Throughput on End Device" width="600">
 </p>
 
 ### 6.3 Performance Evaluation by Varying Load on Edge Nodes
 
-> 🤠Throughput Comparisons👀
+> 🤠Latency Comparison Across Tasks👀
 
 <p align="center">
-  <img src="./images/load_on_edgeNode_latency.png" alt="Latency on Edge Node">
+  <img src="./images/load_on_edgeNode_latency.png" alt="Latency on Edge Node" width="600">
 </p>
 
 > 🤠Average Latency Comparisons👀
 
 <p align="center">
-  <img src="./images/load_on_edgeNode_avglatency.png" alt="Average Latency on Edge Node">
+  <img src="./images/load_on_edgeNode_avglatency.png" alt="Average Latency on Edge Node" width="600">
 </p>
 
 > 🤠Throughput Comparisons👀
 
 <p align="center">
-  <img src="./images/load_on_edgeNode_throughput.png" alt="Throughput on Edge Node">
+  <img src="./images/load_on_edgeNode_throughput.png" alt="Throughput on Edge Node" width="600">
 </p>
 
-## 6.4 Performance Evaluation by Varying Load on Edge node and Edge Device
+### 6.4 Performance Evaluation by Varying Load on Edge Node and End Device
 
 > 🤠Throughput Comparisons👀
 
 <p align="center">
-  <img src="./images/load_on_both_endDevice_edgeNode.png" alt="Throughput on Edge Node">
+  <img src="./images/load_on_both_endDevice_edgeNode.png" alt="Throughput on Edge Node" width="600">
 </p>
+
 
 
 
