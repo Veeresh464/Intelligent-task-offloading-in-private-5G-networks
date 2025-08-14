@@ -191,11 +191,14 @@ These scenarios allow us to assess how effectively the system adapts to dynamic 
   <img src="./images/load_on_both_endDevice_edgeNode.png" alt="Throughput on Edge Node" width="600">
 </p>
 
+<div align="center">
+
 |        Metric         |   Value   |
 |:---------------------:|:---------:|
 | Average Latency (ms)  | 2590.33   |
 | Average Throughput (Mbps) | 0.74  |
 
+</div>
 
 > ⚡⚡ The average latency and throughput measured under varying load conditions on both edge nodes and edge devices show a latency of approximately 2590.33 ms, reflecting the total time taken for task offloading and execution under load. The throughput, observed at 0.74 Mbps, indicates the data transmission rate during this process. These values help in assessing the performance impact when system resources are stressed.
 
