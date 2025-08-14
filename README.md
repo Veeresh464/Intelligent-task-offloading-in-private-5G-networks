@@ -89,5 +89,5 @@ Edge devices often face resource constraints and high latency due to inefficient
 ## 5. Implimentation
 > ⚡You can build all the Docker images mentioned in this project from scrach using **Build** or we have already mentioned the images built during setup in the configuration files.
 
-- 📒 More Detailed Implimentation refer our report [click me](./Project Report/5gReport (1)).
+- 📒 More Detailed Implimentation refer our report [click me](./Project Report/report.pdf).
 
