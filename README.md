@@ -64,6 +64,11 @@ Edge devices often face resource constraints and high latency due to inefficient
 
 - User Equipment (UE) Layer: This layer consists of mobile devices (UEs) connected wirelessly via a 5G network. Communication is facilitated by a USRP B210 software-defined radio acting as the base station, which forms the Radio Access Network (RAN). These devices offload computation-intensive tasks to the network for processing.
 
+- **Core Layer:** The core layer is implemented using **Open5GS** as the 5G core network.  
+Within Open5GS, key network functions such as the **Session Management Function (SMF)** and **User Plane Function (UPF)** manage routing, session handling, and packet forwarding.  
+This layer establishes and maintains connectivity between **User Equipment (UEs)** and the data processing layers, enabling seamless network registration and data flow.
+
+
 
 ## Total Work Flow
 1. User connects Private 5G network
